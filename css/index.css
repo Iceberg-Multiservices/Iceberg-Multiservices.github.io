@@ -79,6 +79,7 @@ header div.right h2 {
     font-style: italic;
     font-size: 18px;
     margin: 0;
+    text-align: right;
 }
 
 section.downloads {
@@ -185,6 +186,10 @@ footer div.right img.map {
     header div.right {
         flex: 1;
         justify-content: center;
+    }
+
+    header div.right h2 {
+        text-align: center;
     }
 
     section.downloads {
