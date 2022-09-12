@@ -64,7 +64,6 @@ header div.left img {
 }
 
 header div.left h1 {
-    text-decoration: underline;
     margin: 0;
 }
 
@@ -88,6 +87,32 @@ section.downloads {
     background-position: center;
     background-size: 100% auto;
     height: 500px;
+}
+
+section.brands {
+    overflow: hidden;
+}
+
+section.brands section.row {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+section.brands section.row h3 {
+    font-size: 26px;
+}
+
+section.brands section.row a {
+    display: flex;
+    align-items: center;
+}
+
+section.brands section.row a img {
+    max-width: 192px;
+    height: auto;
+    align-self: center;
 }
 
 section.founders {
