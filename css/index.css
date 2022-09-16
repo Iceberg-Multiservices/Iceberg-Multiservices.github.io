@@ -10,6 +10,10 @@
     color: #737373;
 }
 
+.light-grey {
+    color: #b9b9b9;
+}
+
 .white {
     color: white;
 }
@@ -24,6 +28,10 @@
 
 .dark-grey-bg {
     background-color: #737373;
+}
+
+.light-grey-bg {
+    background-color: #b9b9b9;
 }
 
 .white-bg {
@@ -90,8 +98,62 @@ section.downloads {
     height: 500px;
 }
 
+section.services {
+    overflow: hidden;
+    padding-bottom: 104px;
+}
+
+section.services.sea-waves {
+    background-image: url(/img/index/sea-waves.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+section.services.hills {
+    background-image: url(/img/index/hills.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+section.services section.row {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+section.services section.row h3 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+section.services section.row div.service {
+    width: 192px;
+    overflow: hidden;
+}
+
+section.services section.row div.service div.icon-container {
+    width: 100%;
+    height: 192px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.services section.row div.service div.icon-container span {
+    font-size: 72px;
+}
+
+section.services section.row div.service .text {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+}
+
 section.brands {
     overflow: hidden;
+    padding-bottom: 26px;
 }
 
 section.brands section.row {
@@ -159,7 +221,7 @@ footer {
 footer div.left {
     flex: 1;
     text-align: left;
-    border-right: 1px solid white;
+    border-right: 1px solid #b9b9b9;
 }
 
 footer div.left p.subheader {
