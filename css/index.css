@@ -14,6 +14,10 @@
     color: #b9b9b9;
 }
 
+.lightest-grey {
+    color: #dcdcdc;
+}
+
 .white {
     color: white;
 }
@@ -32,6 +36,10 @@
 
 .light-grey-bg {
     background-color: #b9b9b9;
+}
+
+.lightest-grey-bg {
+    background-color: #dcdcdc;
 }
 
 .white-bg {
@@ -95,7 +103,31 @@ section.downloads {
     background-position: center;
     background-size: 100% auto;
     background-attachment: fixed;
-    height: 500px;
+    overflow: hidden;
+}
+
+section.downloads .apps {
+    width: 728px;
+    padding: 20px;
+    margin: 80px auto;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 5px 10px rgba(115, 115, 115, 0.5);
+    -moz-box-shadow: 0px 0px 5px 10px rgba(115, 115, 115, 0.5);
+    box-shadow: 0px 0px 5px 10px rgba(115, 115, 115, 0.5);
+    overflow: hidden;
+}
+
+section.downloads .apps .row,
+section.downloads .apps .row.header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+section.downloads .apps .row.header {
+    justify-content: left;
+    font-size: 22px;
 }
 
 section.services {
