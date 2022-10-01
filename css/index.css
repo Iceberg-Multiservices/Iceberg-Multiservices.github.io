@@ -46,6 +46,34 @@
     background-color: white;
 }
 
+.btn.dark-blue {
+    background: #137cbe;
+    color: white;
+}
+
+.btn.dark-blue:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn.normal {
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    -webkit-transition: background-color, color 0.2s linear 0s;
+    -moz-transition: background-color, color 0.2s linear 0s;
+    transition: background-color, color 0.2s linear 0s;
+}
+
 html,
 body {
     margin: 0;
