@@ -22,6 +22,10 @@
     color: white;
 }
 
+.black {
+    color: black;
+}
+
 .dark-blue-bg {
     background-color: #137cbe;
 }
@@ -44,6 +48,10 @@
 
 .white-bg {
     background-color: white;
+}
+
+.black-bg {
+    background-color: black;
 }
 
 .btn.dark-blue {
