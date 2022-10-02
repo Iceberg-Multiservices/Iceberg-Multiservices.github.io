@@ -182,6 +182,11 @@ section.downloads .apps .row a:hover {
     transition: opacity 0.2s linear 0s;
 }
 
+section.downloads .apps .row a.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
 section.downloads .apps .row a div .text {
     text-align: center;
     margin-top: 10px;
