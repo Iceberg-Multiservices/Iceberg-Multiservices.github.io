@@ -112,7 +112,7 @@ header div.left {
 header div.left img {
     width: 64px;
     height: 64px;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 header div.left h1 {
