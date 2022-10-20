@@ -18,6 +18,10 @@
     color: #dcdcdc;
 }
 
+.yellow {
+    color: #f5bc00;
+}
+
 .white {
     color: white;
 }
@@ -44,6 +48,10 @@
 
 .lightest-grey-bg {
     background-color: #dcdcdc;
+}
+
+.yellow-bg {
+    background-color: #f5bc00;
 }
 
 .white-bg {
@@ -249,6 +257,38 @@ section.services section.row div.service .text {
     font-size: 22px;
     text-align: center;
     margin-top: 20px;
+}
+
+section.portfolio {
+    padding-bottom: 36px;
+}
+
+section.portfolio .row {
+    gap: 16px !important;
+}
+
+section.portfolio .row h3 {
+    text-transform: none !important;
+}
+
+section.portfolio .row button.bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+section.portfolio .row button.bullet:hover {
+    background-color: black;
+    -webkit-transition: background-color 0.2s linear 0s;
+    -moz-transition: background-color 0.2s linear 0s;
+    transition: background-color 0.2s linear 0s;
+}
+
+section.portfolio .row button.bullet.active {
+    background: black;
 }
 
 section.brands {
