@@ -30,6 +30,10 @@
     color: black;
 }
 
+.black-opaque-5 {
+    color:rgba(0, 0, 0, 0.5);
+}
+
 .dark-blue-bg {
     background-color: #137cbe;
 }
@@ -60,6 +64,10 @@
 
 .black-bg {
     background-color: black;
+}
+
+.black-bg-opaque-5 {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .btn.dark-blue {
@@ -102,6 +110,74 @@ p {
     margin: 0;
 }
 
+section.popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none; /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+section.popup-bg .window {
+    width: 728px;
+    background: white;
+    border-radius: 5px;
+}
+
+section.popup-bg .window .row {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.popup-bg .window .row.header {
+    justify-content: right;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+section.popup-bg .window .row.header button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+section.popup-bg .window .row.header button:hover {
+    color: black;
+    -webkit-transition: color 0.2s linear 0s;
+    -moz-transition: color 0.2s linear 0s;
+    transition: color 0.2s linear 0s;
+}
+
+section.popup-bg .window .row button.language {
+    width: 64px;
+    overflow: hidden;
+    display: block;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+section.popup-bg .window .row button.language:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s linear 0s;
+}
+
+section.popup-bg .window .row button.language img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section.popup-bg .window .row button.language .text {
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
 header {
     padding: 10px 20px;
     overflow: hidden;
@@ -132,6 +208,7 @@ header div.right {
     justify-content: right;
     align-items: center;
     flex: 1;
+    gap: 10px;
 }
 
 header div.right h2 {
@@ -139,6 +216,23 @@ header div.right h2 {
     font-size: 18px;
     margin: 0;
     text-align: right;
+}
+
+header div.right button.switch-language {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+header div.right button.switch-language:hover {
+    opacity: 0.5;
+    transition: opacity 0.2s linear 0s;
+}
+
+header div.right button.switch-language img {
+    width: 39px;
+    height: auto;
 }
 
 section.downloads {

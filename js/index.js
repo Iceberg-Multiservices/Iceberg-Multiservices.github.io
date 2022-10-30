@@ -1,6 +1,28 @@
 $(document).ready(function () {
     var activePortfolioId = 'portfolio-1';
 
+    $(window).keyup(function (event) {
+        if (event.key == 'Escape') {
+            closeWindow();
+        }
+    });
+
+    $('button.switch-language').click(function (event) {
+        showWindow();
+    });
+
+    $('section.popup-bg').mousedown(function (event) {
+        closeWindow();
+    });
+
+    $('section.popup-bg .window').mousedown(function (event) {
+        event.stopPropagation();
+    });
+
+    $('button.close-window').click(function (event) {
+        closeWindow();
+    });
+
     /**
      * Bullet button for Portfolio.
      */
@@ -19,4 +41,12 @@ $(document).ready(function () {
             $('#' + activePortfolioId).fadeIn('slow');
         });
     });
+
+    function showWindow() {
+        $('section.popup-bg').css('display', 'flex');
+    }
+
+    function closeWindow() {
+        $('section.popup-bg').css('display', 'none');
+    }
 });
