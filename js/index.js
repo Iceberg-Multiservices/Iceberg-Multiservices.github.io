@@ -19,7 +19,7 @@ $(document).ready(function () {
         event.stopPropagation();
     });
 
-    $('button.close-window').click(function (event) {
+    $('button.close-window, button.language').click(function (event) {
         closeWindow();
     });
 

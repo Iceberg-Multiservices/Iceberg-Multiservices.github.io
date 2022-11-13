@@ -12,6 +12,15 @@
     <link rel="icon" type="image/png" href="/img/logo-rounded.png" />
     <title>Iceberg Multiservices</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/js/lib/CLDRPluralRuleParser/CLDRPluralRuleParser.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.messagestore.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.language.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.parser.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.emitter.js"></script>
+    <script src="/js/lib/jquery.i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="/js/global.js"></script>
     <script src="/js/index.js"></script>
 </head>
 
@@ -25,13 +34,13 @@
             </div>
 
             <div class="row">
-                <button class="language">
+                <button class="language" data-locale="pap">
                     <img src="/img/index/languages/papiamento.png" alt="Papiamento Language">
 
                     <div class="text light-blue">Papiamentu</div>
                 </button>
 
-                <button class="language">
+                <button class="language" data-locale="nld">
                     <img src="/img/index/languages/dutch.png" alt="Dutch Language">
 
                     <div class="text light-blue">Nederlands</div>
@@ -39,13 +48,13 @@
             </div>
 
             <div class="row">
-                <button class="language">
+                <button class="language" data-locale="spa">
                     <img src="/img/index/languages/spanish.png" alt="Spanish Language">
 
                     <div class="text light-blue">Español</div>
                 </button>
 
-                <button class="language">
+                <button class="language" data-locale="eng">
                     <img src="/img/index/languages/english.png" alt="English Language">
 
                     <div class="text light-blue">English</div>
@@ -57,7 +66,7 @@
     <header class="white light-blue-bg">
         <div class="left">
             <img src="/img/index/logo.jpeg" width="64" height="64" alt="Iceberg Multiservices Logo" />
-            <h1>Iceberg Multiservices</h1>
+            <h1 data-i18n="app-title">Iceberg Multiservices</h1>
         </div>
 
         <div class="right">
@@ -72,7 +81,7 @@
     <section class="downloads">
         <div class="apps lightest-grey-bg">
             <div class="row header">
-                <div class="dark-grey">Schedule your appointment now!, using our:</div>
+                <div class="dark-grey" data-i18n="schedule-your-appointment">Schedule your appointment now!, using our:</div>
 
                 <img src="/img/index/download-arrow.png" alt="Schedule your appointment now." />
             </div>
