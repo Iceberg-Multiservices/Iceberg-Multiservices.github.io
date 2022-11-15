@@ -31,7 +31,7 @@
 }
 
 .black-opaque-5 {
-    color:rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .dark-blue-bg {
@@ -114,7 +114,8 @@ section.popup-bg {
     position: fixed;
     width: 100%;
     height: 100%;
-    display: none; /* display: flex; */
+    display: none;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     z-index: 1;
@@ -510,11 +511,73 @@ footer div.right img.map {
         justify-content: center;
     }
 
-    header div.right h2 {
+    section.downloads {
+        background-size: auto auto;
+    }
+
+    section.downloads .apps .row {
+        gap: 20px;
+    }
+
+    section.downloads .apps .row.header.center {
         text-align: center;
     }
 
-    section.downloads {
-        background-size: auto auto;
+    section.downloads .apps .row a {
+        width: 100%;
+    }
+
+    section.downloads .apps .row a div {
+        text-align: center;
+    }
+
+    section.downloads .apps .row a div img {
+        width: 40%;
+    }
+
+    section.downloads .apps {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        border-radius: 0;
+        -webkit-box-shadow: 0;
+        -moz-box-shadow: 0;
+        box-shadow: 0;
+    }
+
+    section.downloads .apps .row {
+        flex-direction: column;
+    }
+
+    section.downloads .apps .row.header {
+        justify-content: center;
+    }
+
+    section.services section.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.portfolio .row {
+        flex-direction: row !important;
+    }
+
+    section.brands section.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer div.left {
+        border-right: 0;
+    }
+
+    footer div.left div.linked-icons {
+        justify-content: center;
     }
 }
