@@ -152,6 +152,10 @@ section.popup-bg .window .row.header button:hover {
     transition: color 0.2s linear 0s;
 }
 
+section.popup-bg .window .row.header button span:nth-child(2) {
+    display: none;
+}
+
 section.popup-bg .window .row button.language {
     width: 64px;
     overflow: hidden;
@@ -494,51 +498,56 @@ footer div.right img.map {
     height: 256px;
 }
 
+@media screen and (max-width: 1920px) {
+    section.downloads {
+        background-size: auto auto;
+    }
+}
+
 @media screen and (max-width: 1024px) {
+    section.popup-bg .window {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    section.popup-bg .window .row.header {
+        justify-content: left;
+    }
+
+    section.popup-bg .window .row.header button span:nth-child(1) {
+        display: none;
+    }
+
+    section.popup-bg .window .row.header button span:nth-child(2) {
+        display: inline;
+    }
+
     header {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 20px;
+        padding: 20px 40px;
     }
 
     header div.left {
         flex: 1;
         justify-content: center;
+        gap: 20px;
     }
 
     header div.right {
         flex: 1;
         justify-content: center;
-    }
-
-    section.downloads {
-        background-size: auto auto;
-    }
-
-    section.downloads .apps .row {
         gap: 20px;
-    }
-
-    section.downloads .apps .row.header.center {
-        text-align: center;
-    }
-
-    section.downloads .apps .row a {
-        width: 100%;
-    }
-
-    section.downloads .apps .row a div {
-        text-align: center;
-    }
-
-    section.downloads .apps .row a div img {
-        width: 40%;
     }
 
     section.downloads .apps {
         width: 100%;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
         margin: 0;
         border-radius: 0;
         -webkit-box-shadow: 0;
@@ -547,11 +556,24 @@ footer div.right img.map {
     }
 
     section.downloads .apps .row {
-        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
     }
 
     section.downloads .apps .row.header {
         justify-content: center;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section.downloads .apps .row.header.center {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    section.downloads .apps .row a div {
+        text-align: center;
     }
 
     section.services section.row {
@@ -563,9 +585,26 @@ footer div.right img.map {
         flex-direction: row !important;
     }
 
+    section.portfolio .row.bullets {
+        padding: 0 20px;
+        flex-flow: wrap;
+    }
+
+    section.portfolio .row h3 {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     section.brands section.row {
         flex-direction: column;
         align-items: center;
+    }
+
+    section.brands section.row h3 {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     footer {
@@ -575,9 +614,43 @@ footer div.right img.map {
 
     footer div.left {
         border-right: 0;
+        width: 100%;
     }
 
     footer div.left div.linked-icons {
         justify-content: center;
+    }
+
+    footer div.right {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer div.right img.map {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    section.downloads .apps .row {
+        flex-direction: column;
+    }
+
+    section.downloads .apps .row a {
+        width: 100%;
+    }
+
+    section.brands .row a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    section.brands .row a img {
+        max-width: 69% !important;
+    }
+
+    section.founders section.founder {
+        width: 73%;
     }
 }
