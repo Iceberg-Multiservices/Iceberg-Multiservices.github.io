@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^/unavailable.html$ [NC]
+RewriteRule ^(.*)$ /unavailable.html [R=301,L]
